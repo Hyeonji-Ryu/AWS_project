@@ -44,4 +44,4 @@ callbacks = Mycallbacks()
 model.compile(optimizer= 'Adam', loss = 'categorical_crossentropy', metrics = ['accuracy'])
 model.fit(train_x, train_y, epochs = 100, batch_size = 100, validation_data=(test_x, test_y), callbacks= [callbacks])
 
-tf.saved_model.save(model, 'mnist_convNet')
+tf.saved_model.save(model, 'mnist_convNet/1')
